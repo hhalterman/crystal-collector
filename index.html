@@ -17,6 +17,45 @@
     <body>
         <div class="container">
                 <h1>Crystal Collector</h1>
+
+                <!-- landing page with directions-->
+                <div class="page">
+                    <h2>Directions:</h2>
+                    <p>Upon starting the game, you will receive a target number.</p>
+                    <p>There are 4 crystals, each worth a certain amount of points.</p>
+                    <p>Tap each crystal to find the value of each it and continue tapping to reach the target number!</p>
+                    <p>If you go over, you will lose and the game will restart with a new number.</p>
+                    <p>Good luck!</p>
+
+                    <div class="page_next">Start</div>
+                </div> <!---Close page-->
+
+                 <!-- Page 1: Game Screen -->
+                <div class="page">
+                    <div id="userStats">
+                        <p>Wins: <strong><span id="numWins"></span></strong></p>
+                        <p>Losses: <strong><span id="numLosses"></span></strong></p>
+                    </div>
+
+                    <p>Make a sum of <span id="targetSum"></span>!</p>
+                    <p>Your sum is <strong><span id="currentSum"></span></strong>.</p>
+                    
+                    <div class="clearfix">
+                        <img class="crystals" src="assets/images/crystal_orange.png" alt="orange crystal">
+                        <img class="crystals" src="assets/images/crystal_blue.png" alt="blue crystal">
+                        <img class="crystals" src="assets/images/crystal_green.png" alt="green crystal">
+                        <img class="crystals" src="assets/images/crystal_purple.png" alt="purple crystal">
+                    </div>
+
+                    <div class="page_prev">Directions</div>
+                </div> <!-- close page-->
+        </div> <!-- close container-->
+
+        <!-- Lightbox -->
+        <div id="lightBox_background"></div>
+
+        <div id="lightBox" class="container">
+            <p id="outputMessage"></p>
         </div>
     
         <script type="text/javascript" src="assets/javascript/game.js"></script>        
